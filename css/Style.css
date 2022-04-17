@@ -81,6 +81,7 @@ h2 {
 html,
 body {
   height: 100%;
+  background-image: linear-gradient(rgb(86, 109, 235), rgb(204, 219, 230));
 }
 
 .grid-container {
