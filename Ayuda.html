@@ -6,83 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/Style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--bootstrap iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   </head>
   <body>
     <header>
       <a href="index.html">
         <img src="Img/Logo.svg" alt="" />
       </a>
-      <nav>
-        <ul>
-          <li><a class="nav__link" href="index.html">Inicio</a></li>
-          <li><a class="nav__link" href="Productos.html">Productos</a></li>
-          <li><a class="nav__link" href="nosotros.html">nosotros</a></li>
-          <li><a class="nav__link" href="carrito.html">Carrito</a></li>
-          <li><a class="nav__link" href="Ayuda.html">Ayuda</a></li>
-        </ul>
+      <!-- NAV -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+        <div class="container">
+          <a class="navbar-brand" href="#">Confort Plus</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+        
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mb2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <i class="bi bi-house"></i>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Productos.html">Productos</a>
+                <i class="bi bi-pencil-square"></i>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html">Carrito</a>
+                <i class="bi bi-cart"></i>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <i class="bi bi-person-square"></i>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Ayuda.html">Ayuda</a>
+                <i class="bi bi-chat-left-dots"></i>
+              </li>
+           
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
-      <script
-        src="https://kit.fontawesome.com/e1cd5ca43b.js"
-        crossorigin="anonymous"
-      ></script>
     </header>
-    <form>
-      <fieldset class="formulario_ayuda">
-        <legend>Datos personales</legend>
-        <label for="nombre">Nombre:</label>
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          placeholder=" escriba aquí su nombre"
-        />
-        <br />
-
-        <label class="formulario_ayuda" for="correo">Correo electronico:</label>
-        <input
-          type="text"
-          name="correo"
-          id="correo"
-          placeholder=" escriba aquí su Email"
-        />
-
-        <br />
-        <label class="formulario_ayuda" for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" />
-
-        <div class="formulario_ayuda">hombre</div>
-        <input type="radio" name="sexo" value="hombre" />
-        <div class="formulario_ayuda">mujer</div>
-        <input type="radio" name="sexo" value="mujer" />
-
-        <div class="formulario_ayuda">acepta terminos y condiciones</div>
-        <input type="checkbox" name="acepta" value="1" />
-
-        <br />
-        <select name="tipo pregunta" id="tipo pregunta">
-          <option value="Producto">producto</option>
-          <option value="medida">medida</option>
-        </select>
-        <br />
-
-        <label class="formulario_ayuda" for="mensaje">Mensaje</label>
-
-        <br />
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-        <br />
-
-        <input type="submit" value="enviar" />
-        <input type="reset" value="limpiar formulario" />
+    <form class="p-3">
+      <div class="row mb-3 py-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre completo</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Cuentanos en que podemos ayudarte</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Acepta terminos y condiciones</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+              SI
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              NO
+            </label>
+         
+        </div>
       </fieldset>
+      <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              RECIBIR NOTIFICACIÓN
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
     <br />
-    <footer>
+    <footer class="container">
       <p>Contactanos a traves de la linea 013000477876</p>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-youtube"></i>
-      <i class="fa-brands fa-whatsapp"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-instagram"></i>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
