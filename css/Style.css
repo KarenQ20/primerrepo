@@ -54,16 +54,17 @@ h1 {
 p {
   text-align: center;
   margin-bottom: 3rem;
-  color: aliceblue;
+  color: black;
+}
+
+.slogan {
+  text-align: center;
+  color: blue;
 }
 
 table {
   color: rgb(219, 253, 253);
   border: blanchedalmond;
-  margin: 40px 11px 15px 400px;
-}
-
-.video {
   margin: 40px 11px 15px 400px;
 }
 
