@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 header {
   background-color: rgb(55, 111, 216);
   padding: 0.5rem 0;
@@ -15,7 +14,6 @@ body {
   background-color: #6085bd;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
 ul {
   list-style: none;
   text-align: center;
@@ -24,7 +22,6 @@ ul {
 .nav__list {
   list-style: none;
 }
-
 img {
   max-width: 100%;
   align-items: center;
@@ -39,7 +36,6 @@ svg {
   width: 80%;
   margin: 0 auto;
 }
-
 .nav__link {
   text-decoration: none;
   text-transform: uppercase;
@@ -50,13 +46,12 @@ h1 {
   color: rgb(2, 2, 2);
   text-align: center;
 }
-
 .introsection {
   text-align: center;
   color: aliceblue;
+
   padding: 8rem 0 0 0;
 }
-
 p {
   text-align: center;
   margin-bottom: 3rem;
@@ -75,7 +70,6 @@ p {
 .supertop {
   margin: 40px 11px 15px 400px;
 }
-
 h2 {
   text-align: center;
 }
@@ -99,6 +93,7 @@ body {
   padding: 50px 20px 20px 20px;
   background-color: rgb(58, 109, 204);
   color: black;
+
   border: 1px solid white;
 }
 
@@ -106,5 +101,3 @@ body {
   width: 15rem 4rem;
   border: 2px double;
 }
-
-/*# sourceMappingURL=style.css.map */
