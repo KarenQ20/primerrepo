@@ -1,0 +1,54 @@
+$colorprincipal: white;
+
+$colorn: black;
+
+
+
+body {
+  background-color: #6085bd;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $colorprincipal;
+}
+
+h1 {
+  color: $colorn;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.introsection {
+  text-align: center;
+  color: $colorprincipal;
+
+  padding: 8rem 0 0 0;
+}
+p {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: $colorn;
+}
+
+.slogan {
+  text-align: center;
+  color: blue;
+}

@@ -1,76 +1,19 @@
+@import "header";
+
+@import "img";
+
+@import "cuerpo";
+
+$colorprincipal: white;
+
+$colorn: black;
+
 * {
   margin: 0;
   padding: 0;
 }
-header {
-  background-color: rgb(55, 111, 216);
-  padding: 0.5rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-body {
-  background-color: #6085bd;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-ul {
-  list-style: none;
-  text-align: center;
-}
-
-.nav__list {
-  list-style: none;
-}
-img {
-  max-width: 100%;
-  align-items: center;
-}
-
-img,
-svg {
-  vertical-align: middle;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-.nav__link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-}
-
-h1 {
-  color: rgb(2, 2, 2);
-  text-align: center;
-}
-.introsection {
-  text-align: center;
-  color: aliceblue;
-
-  padding: 8rem 0 0 0;
-}
-p {
-  text-align: center;
-  margin-bottom: 3rem;
-  color: black;
-}
-
-.slogan {
-  text-align: center;
-  color: blue;
-}
 
 .formulario_ayuda {
-  text-align: center;
-}
-
-.supertop {
-  margin: 40px 11px 15px 400px;
-}
-h2 {
   text-align: center;
 }
 
@@ -95,9 +38,4 @@ body {
   color: black;
 
   border: 1px solid white;
-}
-
-.img_index {
-  width: 15rem 4rem;
-  border: 2px double;
 }
